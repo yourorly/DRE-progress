@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    }
+    h1 {
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #00000000;
+    }
+    .drelogo img{
+    width: 700;
+    height: 700px;
+    margin-top: 40px;
+    display: inline;
+    border-radius: 50%;
+    }
+    h2 {
+    background-color: #e8e3bb;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 35px;
+    width: 500px;
+    } 
+    button {
+        margin-top: -70px;
+        font-size: 25px;
+        background-color: #B85C38;
+        color: aliceblue;
+        padding: 12px 45px;
+        border: none;
+        border-radius: 10px;
+    }
+    

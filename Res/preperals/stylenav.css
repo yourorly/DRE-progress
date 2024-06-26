@@ -1,0 +1,36 @@
+nav { 
+    background-color:  #F4DFC8;
+    padding: 5px 5px;
+    color: #E9DCBE;
+}
+
+nav img {
+    width:40px;
+    text-align: center;
+    margin: auto auto;
+}
+
+.main {
+    margin-top: 5px;
+}
+
+nav .vl {
+    display: none;
+  }
+  
+
+@media (min-width: 575px) {
+    nav .vl {
+        font-size: 22px;
+        display: block;
+    }
+    nav {
+        background-color: #F4DFC8;
+        padding: 5px 5px;
+        }
+    ul .bar {
+        font-size: 25px;
+        color: #000000;
+    }
+        
+}

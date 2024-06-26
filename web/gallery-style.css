@@ -1,0 +1,77 @@
+.title-container {
+    margin-top: 1in;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.title {
+    
+    width: 500px;
+    font-size: 75px;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+}
+
+.title-span {
+    font-weight: lighter;
+}
+
+.title, .image-grid {
+    animation: fadeIntoView 1s ease;
+
+}
+
+@keyframes fadeIntoView {
+    0%{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* picture properties */
+.image-grid {
+    margin: 0px 50px;
+    columns: 5;
+    column-gap: 13px;
+}
+
+.image-grid a{
+    
+    padding: 0;
+}
+
+.image-grid a img{
+    width: 100%;
+    transition: 0.5s ease-out;
+    margin-bottom: 3px;
+}
+
+.modal .modal-dialog .modal-content .mainmodal img{
+    width: 100%;
+    transition: 0.5s ease-out;
+    margin-bottom: 3px;
+}
+
+.image-grid a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 10px black;
+    z-index: 1;
+}
+
+/* different sizes of image(you can customize the size) */
+/* can add both for a larger image image */
+
+/* for mobile */
+@media screen and (max-width: 750px) {
+    .image-grid{
+        margin: 0px 30px;
+        columns: 2;
+        column-gap: 10px;
+    }
+    
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dre | Sign Up</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="../Res/Bootstrap/css/bootstrap.min.css">
+    <script src="../Res/Bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="JS/validation.js" defer></script> -->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="center">
+        <a href="../web/home.php">< Back</a>
+          <h1>Signup</h1>
+          <form action="process-signup.php" method="POST" id="signupform">
+              <div class="txt_field">
+                  <input type="text" id="name" name="name">
+                  <span></span>
+                  <label>Username</label>
+              </div>
+              <div class="txt_field">
+                <input type="text" id="email" name="email">
+                <span></span>
+                <label>Email</label>
+            </div>
+              <div class="txt_field">
+                  <input type="password" id="password" name="password">
+                  <span></span>
+                  <label>Password</label>
+              </div>
+              <div class="txt_field">
+                <input type="password" id="password_confirmation" name="password_confirmation">
+                <span></span>
+                <label>Confirm Password</label>
+            </div>
+              <input name="submit" type="Submit" value="Register">
+              <div class="signup_link">
+                  Already have an account? <a href="login.php">Login</a>
+              </div>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>

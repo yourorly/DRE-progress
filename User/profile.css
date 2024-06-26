@@ -1,0 +1,13 @@
+.glassgloss{
+    background-color: rgba(0, 0, 0, 0.68);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.input {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    border-color: none;
+    color: white;
+}

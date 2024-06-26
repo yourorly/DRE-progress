@@ -1,0 +1,203 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    background-size: cover;
+    overflow-x: hidden;
+    padding: 0%;
+    margin: 0%;
+}
+
+.intro-text {
+    width: 300px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.intro-title {
+    color: white;
+    font-size: 35px;
+}
+
+.background-img {
+    margin-top: 100px;
+    width: 100vw;
+    min-height: 75vh;
+    background-image: white;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.coverbackground {
+    margin: auto auto;
+    padding: 15px;
+    display: block;
+    margin-top: 55px;
+    width: 75%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.glass-filter  {
+    width: 75%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    font-size: 40px;
+    color: rgb(255, 64, 64);
+    
+}
+
+.food-names {
+    margin-left: 8px;
+    overflow: hidden;
+}
+
+.price {
+    opacity: 0.50;
+    font-size: 14px;
+    margin-left: 8px;
+    margin-top: -10px;
+}
+
+.popular-picks {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.items {
+    display: inline;
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin: 10px;
+    background-color: rgb(27, 27, 27);
+    justify-content: center;
+    color: white;
+}   
+
+.items > img {
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.view-button {
+    border-radius: 4px;
+    background-color: rgb(204, 48, 37);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 8px;
+    margin-top: -8px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+.view-button .button-text {
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+  }
+  
+.view-button .button-text:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.view-button:hover .button-text {
+    padding-right: 25px;
+}
+  
+.view-button:hover .button-text:after {
+    opacity: 1;
+    right: 0;
+}
+
+.about-us-img {
+    float: right;
+    display: inline;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.about-us-title {
+    display: inline-block;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.description {
+    font-size: 20px;
+    color: rgb(48, 48, 48);
+}
+
+.about-button {
+    border-radius: 4px;
+    background-color: rgb(204, 48, 37);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+.about-button .button-text {
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+  }
+  
+.about-button .button-text:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.about-button:hover .button-text {
+    padding-right: 25px;
+}
+  
+.about-button:hover .button-text:after {
+    opacity: 1;
+    right: 0;
+}

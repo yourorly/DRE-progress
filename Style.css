@@ -1,0 +1,36 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap');
+
+body{
+    padding: 0%;
+    background-color: darkgray;
+}
+
+nav #navdiv {
+    background-color: rgb(255, 235, 193);
+    border-radius: 20px;
+    padding: 5px 5px;
+}
+
+nav #navdiv image {
+    width:40px;
+    text-align: center;
+    margin: auto auto;
+    display: block;
+}
+
+nav #navdiv .vl {
+    font-size: 25px;
+    display: none;
+  }
+
+@media (min-width: 575px) {
+    nav #navdiv .vl {
+        display: block;
+    }
+    nav #navdiv {
+        background-color: rgb(255, 235, 193);
+        border-radius: 50px;
+        padding: 5px 5px;
+        }
+}
