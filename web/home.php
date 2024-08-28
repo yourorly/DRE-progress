@@ -1,3 +1,4 @@
+<!-- This is for checking connection and connecting on database -->
 <?php
 
 session_start();
@@ -30,6 +31,7 @@ if (isset($_SESSION["user_id"])) {
     <script src="../Res/Bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
+  <!-- this calls the preferals or resorces for navbar to save space and to edit it easily -->
 <?php include('../Res/preperals/nav_bar.php')?>
     <div class="addmenu">
     <body> 
@@ -94,6 +96,7 @@ if (isset($_SESSION["user_id"])) {
 
     <div class="popular_picks">
               <h1 class="popular_header_title">Best Sellers</h1>
+              <!-- this filter the allowed elements to display to front end -->
               <?php 
                 $sqlc = "SELECT * FROM drefooddb WHERE active='Yes' AND featured='Yes' AND bestseller='Yes' LIMIT 3";
                 $resultc = mysqli_query($mysqli, $sqlc);
@@ -110,6 +113,7 @@ if (isset($_SESSION["user_id"])) {
                     $featured = $row['featured'];
                     $active = $row['active'];
                     ?>
+                    <!-- this makes the preset for the popular menu -->
               <div class="popular_menu_item">
                   <div class="popular_img">
                     <?php

@@ -1,3 +1,4 @@
+<!-- This is for checking connection and connecting on database -->
 <?php
 
 session_start();

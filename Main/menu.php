@@ -1,3 +1,4 @@
+<!-- This is for checking connection and connecting on database -->
 <?php
 
 session_start();
@@ -48,6 +49,7 @@ if (isset($_SESSION["user_id"])) {
         <a href="menu.php">
         All
         </a>
+        <!-- this filter cathegory by cathegory -->
         </button>
     <?php 
             $sql1 = "SELECT * FROM drecategorydb WHERE active='Yes' AND featured='Yes'";
@@ -68,6 +70,7 @@ if (isset($_SESSION["user_id"])) {
 
             
     <div class="menu_contents container-fluid row">
+        <!-- Displaying all cathegory or filtered cathegory -->
     <?php
     if(isset($_GET['filter'])){
         $filteredcategory = $_GET['filter'];
@@ -76,6 +79,7 @@ if (isset($_SESSION["user_id"])) {
     }else{
         $sqlc = "SELECT * FROM drefooddb WHERE active='Yes' AND featured='Yes'";
     }
+    // this display all items in selected cathegory
           $resultc = mysqli_query($mysqli, $sqlc);
           $count = mysqli_num_rows($resultc);
           
